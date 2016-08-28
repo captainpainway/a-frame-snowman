@@ -17,7 +17,17 @@
       <a-sphere position="-0.4 4.3 -13" radius="0.2" material="shader: standard; color: #000; metalness: 0; roughness: 1"></a-sphere>
       <a-sphere position="0.4 4.3 -13" radius="0.2" material="shader: standard; color: #000; metalness: 0; roughness: 1"></a-sphere>
       <a-cone position="0 4 -13" rotation="90 0 0" radius-bottom="0.2" radius-top="0" material="shader: standard; color: #ce6548"></a-cone>
-      <a-sky src="#snowy" rotation="0 -140 0"></a-sky>
+      <a-plane
+        material="shader: flat; src: #snowy; repeat: 1 0.48"
+        position="0 -1 0"
+        rotation="-90 0 0"
+        width="150"
+        height="50"></a-plane>
+      <a-entity geometry="primitive: sphere; radius: 50"
+          material="shader: flat; src: #snowy"
+          rotation="0 40 0"
+          position="0 0 0"
+          scale="1 1 -1"></a-entity>
       <a-entity light="type: ambient; color: #405e94"></a-entity>
       <a-entity light="type: directional; color: #FFF; intensity: 0.8" position="5 5 10"></a-entity>
     </a-scene>
